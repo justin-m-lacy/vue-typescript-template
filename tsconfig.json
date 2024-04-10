@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"module": "ESNext",
+		"outDir": "build",
+		"moduleResolution": "bundler",
+		"target": "ESNext",
+		"allowJs": true,
+		"checkJs": false,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		}
+	},
+	"types": [
+		"vite/client"
+	],
+	"include": [
+		"@types/*.d.ts",
+		"./*.ts",
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"build",
+		"dev"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
+}
